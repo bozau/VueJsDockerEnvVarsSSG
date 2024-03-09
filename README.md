@@ -22,3 +22,5 @@ You can checkout some articles and discussions on this;
 - [Build Once, Deploy Many : r/devops](https://www.reddit.com/r/devops/comments/d9ln04/build_once_deploy_many/)
 - [Giulio Vian - Build once, deploy everywhere — part 1](https://medium.com/@giuliovdev/build-once-deploy-everywhere-part-1-706d7affaf0f)
 - [Redhat - Build Once, Deploy Anywhere!](https://www.redhat.com/en/blog/build-once-deploy-anywhere)
+
+The original Stack Overflow question that this helped with to offer this example: [StackOverflow - Pass environment variable into a Vue App at runtime - Johann](https://stackoverflow.com/q/53010064/7030317)
