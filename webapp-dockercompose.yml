@@ -1,0 +1,18 @@
+# Create: sudo docker compose -f webapp-dockercompose.yml -p webapp up -d
+# Remove: sudo docker compose -f v -p webapp down
+# List running: sudo docker ps
+# Logs for service: sudo docker logs webapp
+version: '3'
+
+services:
+  site:
+    image: yourimage
+    ports:
+      - 8080:8080
+    environment: # From app.config.ts and in nginx-entrypoint.sh
+      - APP_ENVIRONMENT_NAME=dev
+      - APP_VERSION_NUMBER=0.0.5
+      #- SENTRY_DSN= # Not inlcuding these causes defaults from app.config.ts to be used
+      #- SENTRY_TRACES_SAMPLE_RATE= # Not inlcuding these causes defaults from app.config.ts to be used
+      #- AUTH0_REDIRECTURI= # Not inlcuding these causes defaults from app.config.ts to be used
+      #- AUTH0_AUDIENCE= # Not inlcuding these causes defaults from app.config.ts to be used
